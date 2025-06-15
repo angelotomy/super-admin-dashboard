@@ -1,0 +1,100 @@
+.comment-section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.comment-input {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.comment-item {
+    padding: 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.comment-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.comment-content {
+    margin-bottom: 12px;
+    white-space: pre-wrap;
+}
+
+.comment-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.edit-comment {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.edit-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.history-tooltip {
+    max-width: 300px;
+    font-size: 0.875rem;
+}
+
+.history-tooltip > div {
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.history-tooltip > div:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+/* Override Bootstrap tooltip styles */
+.tooltip-inner {
+    max-width: 300px !important;
+    padding: 12px !important;
+    text-align: left !important;
+    background-color: white !important;
+    color: #333 !important;
+    border: 1px solid #ddd !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.tooltip.show {
+    opacity: 1 !important;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .comment-section {
+        padding: 10px;
+    }
+    
+    .history-tooltip {
+        max-width: 250px;
+    }
+} 
