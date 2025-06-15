@@ -222,4 +222,4 @@ npm start
 
 ## Support
 
-For any issues or questions, please refer to the project documentation or contact the development team. 
+For any issues or questions, please refer to the project documentation or contact me.
